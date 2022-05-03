@@ -1,0 +1,39 @@
+=================================================
+  ___  _   _   _    ____ _____ ____  _____ _____ 
+ / _ \| | | | / \  |  _ \_   _|  _ \| ____| ____|
+| | | | | | |/ _ \ | | | || | | |_) |  _| |  _|  
+| |_| | |_| / ___ \| |_| || | |  _ <| |___| |___ 
+ \__\_\\___/_/   \_\____/ |_| |_| \_\_____|_____|
+                                                 
+=================================================
+
+Step 1. Fix the infinite loop that takes place if you put two points next to
+each other in the quadtree
+
+Step 2. Make a map editor using the colors and read libraries. The user should
+hit the keys 1-8 to pick different colors, and then you click on the screen
+and color the pixel at that location that color. Hold each click into the
+quadtree. A new click will overwrite an old click.
+
+Step 3. Write it to disk. Format:
+x,y,color (1-8)
+Don't write any uncolored pixels to disk, just the places they clicked. 
+
+Example:
+10,20,4
+11,3,8
+40,20,2
+Etc.
+
+Come up with nice looking 8-bit colors for the following options:
+0) The void (outside of the map, and is every tile by default)
+1) Roads
+2) Grass
+3) Mountains
+4) Deserts
+5) Rivers
+6) Arctic
+7) Swamp
+8) Walls
+
+Screenshot and post on Canvas
